@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.logo__container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.naming__logo{
+    font-size: 48px;
+    letter-spacing: 9px;
+    margin-bottom: 15px;
+}
+
+.rounded{
+    border-radius: 1rem !important;
+}
+
+.madeIN{
+    display: flex;
+}
+
+.madeIN::before{
+    content: "MADE IN SAINT P ";
+    /* height: 30px; */
+    /* width: 100px; */
+    /* border: 1px solid black; */
+    filter: blur(1px);
+    letter-spacing: 40px;
+    font-size: 20px;
+    /* display:block; */
+    margin-right:-30px;
+    text-align:right;
+}
+.madeIN::after{
+    content: ".";
+    filter: blur(1px);
+    font-size: 20px;
+}
