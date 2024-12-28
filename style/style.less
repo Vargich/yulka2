@@ -422,19 +422,48 @@ a {
 		font-size: 2rem;
 	font-family: "Comfortaa", serif;
 	}
-	span:last-child{
-		margin-top: 5px;
-		border: 2px solid #496a70;
-		background-color: #496a70;
-	}
-	span:last-child::before{
-		content: "ручной работы";
+	// span:last-child{
+	// 	margin-top: 5px;
+	// 	border: 2px solid #496a70;
+	// 	background-color: #496a70;
+	// }
+	// span:last-child::before{
+	// 	content: "ручной работы";
 		
-		line-height: 0px;
-		color: #fff;
-	}
+	// 	line-height: 0px;
+	// 	color: #fff;
+	// }
 	
 }
+
+.highlight-container, .highlight {
+	position: relative;
+  }
+  
+  .highlight{
+	color: white;
+  }
+
+  .highlight-container {
+	display: inline-block;
+  }
+  .highlight-container:before {
+	content: "";
+	display: block;
+	height: 90%;
+	width: 100%;
+	margin-left: -3px;
+	margin-right: -3px;
+	position: absolute;
+	background: #496a70;
+	color: white;
+	transform: rotate(2deg);
+	top: -1px;
+	left: -1px;
+	border-radius: 20% 25% 20% 24%;
+	padding: 10px 3px 3px 10px;
+  }
+
 .op-0{
 	opacity: 0;
 }
