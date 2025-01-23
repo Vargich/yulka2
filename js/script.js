@@ -13,3 +13,4 @@ function bannerSwitcher() {
 //     clearInterval(bannerTimer);
 //     bannerTimer = setInterval(bannerSwitcher, 5000)
 //   });
+

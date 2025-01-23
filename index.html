@@ -7,6 +7,8 @@
     <link rel="stylesheet/less" type="text/css" href="style/style.less">
     <script src="js/less.js" type="text/javascript"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-dist/js/bootstrap.min.js">
     <link rel="stylesheet" href="fonts/font-awesome.min.css">
@@ -31,8 +33,11 @@
                 <div class="d-grid">
                     <!-- <div class="description d-flex"><div class="description__container d-flex"><span>детская одежда</span><span></span></div></div> -->
                     <div class="description d-flex">
-                        <div class="description__container d-flex"><span>детская одежда</span><span
-                                class="highlight-container"><span class="highlight">ручной работы</span></span></div>
+                        <div class="description__container d-flex">
+                            <span>стильная</span>
+                            <span>детская одежда</span>
+                                <span class="highlight">ручной работы</span>
+                        </div>
                     </div>
             
                     <section id="section-1">
@@ -90,7 +95,7 @@
             
             <div class="row br">
                 <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto h-100 portfolio-item" data-toggle="modal1" href="#portfolio-modal-1">
+                    <a class="d-block mx-auto h-100 portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100 box-shadow">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
                         </div><img class="img-fluid" src="img/showcase/1.jpg">
@@ -167,27 +172,26 @@
       </div>
     </footer>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-      <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-              <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-              <div class="modal-body">
-                  <div class="container text-center">
-                      <div class="row">
-                          <div class="col-lg-8 mx-auto optm">
-                              <h3 class="text-uppercase text-secondary mb-0 ">Дино костюм</h3>
-                              <hr class="heart-dark mb-5">
-                              <img class="img-fluid mb-5" src="assets/img/showcase/1.jpg">
-                              <img class="img-fluid mb-5" src="assets/img/showcase/1-1.jpg">
-                              <p class="mb-5">Дино костюм для малыша станет любимой вещью в гардеробе 😍.
-                                  Большой выбор расцветок, любой размер.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="modal-footer pb-3"><a class="btn mx-auto portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i></a></div>
-          </div>
-      </div>
-  
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto optm">
+                                <h3 class="text-uppercase text-secondary mb-0 ">Дино костюм</h3>
+                                <hr class="heart-dark mb-5">
+                                <img class="img-fluid mb-5" src="assets/img/showcase/1.jpg">
+                                <img class="img-fluid mb-5" src="assets/img/showcase/1-1.jpg">
+                                <p class="mb-5">Дино костюм для малыша станет любимой вещью в гардеробе 😍.
+                                    Большой выбор расцветок, любой размер.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-3"><a class="btn mx-auto portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i></a></div>
+            </div>
+        </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
       <div class="modal-dialog modal-lg" role="document">
@@ -333,4 +337,5 @@
   type="text/javascript"
   src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js"
   async></script>
+  
 </html>
