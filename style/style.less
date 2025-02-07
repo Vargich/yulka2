@@ -10,12 +10,13 @@
 
 body, html{
 	height: 100%;
+	font-family: "Comfortaa", serif;
 }
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Quicksand", serif;
+	font-family: "Comfortaa", serif;
 	font-optical-sizing: auto;
 	/* font-weight: weight; */
 	font-style: normal;
@@ -28,10 +29,6 @@ body, html{
   min-height: 100vh;
 }
 
-@media (max-height<500px)
-{
-
-}
 .logo__container {
 	margin-top: 25px;
 	display: grid;
@@ -128,7 +125,7 @@ img {
 
 .img-fluid {
 	width: 100%;
-	height: 100% !important;
+	// height: 100% !important;
 	background-size: cover;
 }
 
@@ -304,9 +301,6 @@ img {
 	}
 }
 
-.main section {
-	// padding: 6rem 0;
-}
 
 a {
 	color: #2c3e50;
@@ -322,9 +316,6 @@ a {
 .container_portfolio {
 	display: flex;
 	grid-column: 2;
-	// max-width: 1140px;
-	// margin-left: auto;
-	// margin-right: auto;
 	flex-direction: row;
 	justify-content: center;
 }
@@ -352,6 +343,10 @@ a {
 @media (min-width:576px) {
 	.portfolio .portfolio-item {
 		// margin-bottom: 30px;
+	}
+
+	.description span{
+		font-size: 1rem;
 	}
 }
 
@@ -476,7 +471,7 @@ a {
 
 		font-weight: 300;
 	}
-	.description__container{
+	.description__container span{
 		font-size: 1.5rem !important;
 	}
 
@@ -497,7 +492,7 @@ a {
 }
 
 .d-grid{
-	
+	display: grid !important;
 	grid-template-columns: 40% 60%;
 	margin-bottom: 50px;
 }
@@ -526,11 +521,11 @@ a {
 	justify-content:flex-end;
 	align-items: center;
 	span{
-		
+		font-weight: bold;
+		font-size: 2rem;
 		letter-spacing: 2px;
 		text-transform: uppercase;
-		font-size: inherit;
-	font-family: "Comfortaa", serif;
+		font-family: "Comfortaa", serif;
 	}
 	// span:last-child{
 	// 	margin-top: 5px;
@@ -554,10 +549,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 2rem;
-	// border: 1px solid black;
 }
-
 
 #section-1 {
 	grid-column: 2;
@@ -1085,7 +1077,7 @@ a {
     -ms-flex-pack          : justify;
     justify-content        : space-between;
     padding                : 1rem;
-    border-bottom          : 1px solid #dee2e6;
+    // border-bottom          : 1px solid #dee2e6;
     border-top-left-radius : calc(.3rem - 1px);
     border-top-right-radius: calc(.3rem - 1px)
 }
@@ -1119,7 +1111,7 @@ a {
     -ms-flex-pack             : end;
     justify-content           : flex-end;
     padding                   : .75rem;
-    border-top                : 1px solid #dee2e6;
+    // border-top                : 1px solid #dee2e6;
     border-bottom-right-radius: calc(.3rem - 1px);
     border-bottom-left-radius : calc(.3rem - 1px)
 }

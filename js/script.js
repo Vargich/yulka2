@@ -7,7 +7,7 @@ function bannerSwitcher() {
     else $('.sec-1-input').first().prop('checked', true);
   }
 
-   var bannerTimer = setInterval(bannerSwitcher, 5000);
+   var bannerTimer = setInterval(bannerSwitcher, 2500);
 
 //   $('nav .controls label').click(function() {
 //     clearInterval(bannerTimer);
